@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO — Visual & Motion Designer</title>
+  <meta name="description" content="Профессиональное портфолио: ретушь, фотомонтаж, рекламные креативы, видеомонтаж, YouTube-thumbnails">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">PORTFOLIO</a>
+      <div class="nav-links">
+        <a href="#detailing">Detailing</a>
+        <a href="#beauty">Beauty</a>
+        <a href="#commercial">Commercial</a>
+        <a href="#ads">Ads</a>
+        <a href="#ecommerce">E-com</a>
+        <a href="#video">Video</a>
+        <a href="#thumbs">Thumbnails</a>
+        <a href="#contact" class="nav-cta">Связаться</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#detailing">Detailing</a>
+    <a href="#beauty">Beauty</a>
+    <a href="#commercial">Commercial</a>
+    <a href="#ads">Ads</a>
+    <a href="#ecommerce">E-com</a>
+    <a href="#video">Video</a>
+    <a href="#thumbs">Thumbnails</a>
+    <a href="#contact">Связаться</a>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Visual Artist · Photo · Motion · Ads</p>
+      <h1 class="hero-title">
+        Работа, от которой<br>
+        <span class="gradient-text">заказчики горят</span>
+      </h1>
+      <p class="hero-sub">Ретушь · Фотомонтаж · Рекламные креативы · Видеомонтаж · YouTube</p>
+      <div class="hero-cta">
+        <a href="#detailing" class="btn btn-primary">Смотреть кейсы</a>
+        <a href="#contact" class="btn btn-outline">Обсудить проект</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">проектов</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">результат</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">в работе</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Листай вниз</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- Section: Photo Editing — Detailing -->
+  <section class="section" id="detailing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">Photo Editing — Detailing</h2>
+        <p class="section-desc">Автомобильная детализация: глянец, отражения, идеальная чистота. Сырое → готовый шедевр.</p>
+      </div>
+
+      <div class="gallery-grid detailing-grid">
+        <div class="gallery-item large" data-category="detailing">
+          <img src="assets/camry-1.jpg" alt="Toyota Camry detailing" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Toyota Camry</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="detailing">
+          <img src="assets/bmw-black.jpg" alt="BMW X detailing" loading="lazy">
+          <div class="gallery-overlay">
+            <span>BMW X</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="detailing">
+          <img src="assets/bmw-2.jpg" alt="BMW X side" loading="lazy">
+          <div class="gallery-overlay">
+            <span>BMW X</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="detailing">
+          <img src="assets/cadillac-1.jpg" alt="Cadillac Escalade" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Cadillac Escalade</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="detailing">
+          <img src="assets/camry-2.jpg" alt="Toyota Camry 2" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Toyota Camry</span>
+          </div>
+        </div>
+        <div class="gallery-item large" data-category="detailing">
+          <img src="assets/cadillac-2.jpg" alt="Cadillac Escalade front" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Cadillac Escalade</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Beauty Retouch -->
+  <section class="section section-dark" id="beauty">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Ретушь — Beauty</h2>
+        <p class="section-desc">Натуральная beauty-ретушь: кожа, свет, детали. До / После.</p>
+      </div>
+
+      <div class="ba-wrapper">
+        <div class="ba-container" id="baBeauty">
+          <img src="assets/beauty-before-after.png" alt="Beauty retouch before after" class="ba-img">
+          <!-- The image itself is a side-by-side, so we treat it as full showcase -->
+        </div>
+        <p class="ba-caption">Слева — исходник · Справа — после ретуши</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Commercial Photomontage -->
+  <section class="section" id="commercial">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Photoshop — Коммерческий фотомонтаж</h2>
+        <p class="section-desc">Исходник → мощный рекламный креатив. Nike Performance Collection.</p>
+      </div>
+
+      <div class="commercial-compare">
+        <div class="compare-card">
+          <div class="compare-label">Исходник</div>
+          <img src="assets/runner-source.jpg" alt="Source photo" loading="lazy">
+        </div>
+        <div class="compare-arrow">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+        <div class="compare-card result">
+          <div class="compare-label">Результат</div>
+          <img src="assets/nike-ad.png" alt="Nike ad final" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Advertising Creatives — Dental -->
+  <section class="section section-dark" id="ads">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Рекламные креативы</h2>
+        <p class="section-desc">Dental Clinic — серия рекламных макетов. Конверсия через эмоцию и чистоту.</p>
+      </div>
+
+      <div class="ads-grid">
+        <div class="ad-card">
+          <img src="assets/dental-1.jpg" alt="Dental ad 1" loading="lazy">
+        </div>
+        <div class="ad-card">
+          <img src="assets/aGujk.jpg" alt="Dental ad 2" loading="lazy">
+        </div>
+        <div class="ad-card">
+          <img src="assets/qGI2q.jpg" alt="Dental ad 3" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: E-commerce Banners -->
+  <section class="section" id="ecommerce">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Баннеры — E-commerce</h2>
+        <p class="section-desc">NOVA — New Season. Минимализм, который продаёт.</p>
+      </div>
+
+      <div class="ecom-grid">
+        <div class="ecom-card">
+          <img src="assets/gGaBi.jpg" alt="NOVA banner 1" loading="lazy">
+        </div>
+        <div class="ecom-card">
+          <img src="assets/0DriE.jpg" alt="NOVA banner 2" loading="lazy">
+        </div>
+        <div class="ecom-card">
+          <img src="assets/5Wanr.jpg" alt="NOVA banner 3" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Video / Reels / TikTok / Shorts -->
+  <section class="section section-dark" id="video">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Reels / TikTok / Shorts + YouTube</h2>
+        <p class="section-desc">Динамичный монтаж под платформы. Короткий контент и длинный подкаст.</p>
+      </div>
+
+      <div class="video-grid">
+        <a href="https://vimeo.com/1226162771" target="_blank" rel="noopener" class="video-card">
+          <div class="video-thumb">
+            <div class="play-icon">▶</div>
+            <span class="platform">SHORTS</span>
+          </div>
+          <h3>Shorts-ролик</h3>
+          <p>Динамичный вертикальный монтаж</p>
+        </a>
+        <a href="https://vimeo.com/1226162786" target="_blank" rel="noopener" class="video-card">
+          <div class="video-thumb">
+            <div class="play-icon">▶</div>
+            <span class="platform">TIKTOK</span>
+          </div>
+          <h3>TikTok-ролик</h3>
+          <p>Под алгоритмы и удержание</p>
+        </a>
+        <a href="https://vimeo.com/1226053991" target="_blank" rel="noopener" class="video-card">
+          <div class="video-thumb">
+            <div class="play-icon">▶</div>
+            <span class="platform">IG TARGET</span>
+          </div>
+          <h3>Instagram Target</h3>
+          <p>Рекламный вертикальный ролик</p>
+        </a>
+        <a href="https://mega.nz/file/wngUWBSK#TBKIr8FSthKmblfvHhaL301CBoCFPlSzkaM6rUG-T9o" target="_blank" rel="noopener" class="video-card long">
+          <div class="video-thumb">
+            <div class="play-icon">▶</div>
+            <span class="platform">YOUTUBE</span>
+          </div>
+          <h3>Подкаст · 1 час</h3>
+          <p>Полный монтаж подкаста криптовалютчика</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: YouTube Thumbnails -->
+  <section class="section" id="thumbs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">07</span>
+        <h2 class="section-title">YouTube Thumbnails</h2>
+        <p class="section-desc">Кликлибельные обложки. Эмоция + текст + композиция = CTR.</p>
+      </div>
+
+      <div class="thumbs-grid">
+        <div class="thumb-card">
+          <img src="assets/yt-thumb-1.jpg" alt="YouTube thumbnail 1" loading="lazy">
+        </div>
+        <div class="thumb-card">
+          <img src="assets/yt-thumb-2.jpg" alt="YouTube thumbnail 2" loading="lazy">
+        </div>
+        <div class="thumb-card">
+          <img src="assets/yt-thumb-3.jpg" alt="YouTube thumbnail 3" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <h2>Готов взять проект<br><span class="gradient-text">на следующий уровень</span></h2>
+        <p>Ретушь, креативы, монтаж, thumbnails — всё в одном месте.<br>Пиши, обсудим задачу и сроки.</p>
+        <div class="contact-actions">
+          <a href="mailto:hello@example.com" class="btn btn-primary">Написать на почту</a>
+          <a href="https://t.me/" class="btn btn-outline" target="_blank">Telegram</a>
+        </div>
+        <p class="contact-note">Замени ссылки на свои реальные контакты</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Portfolio · Visual & Motion</p>
+      <p class="footer-sub">Сделано, чтобы заказчики не могли пройти мимо</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">×</button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
